@@ -1,0 +1,6 @@
+framework module KZAPLink {
+  umbrella header "KZAPLink-umbrella.h"
+
+  export *
+  module * { export * }
+}

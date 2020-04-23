@@ -1,0 +1,23 @@
+PODS:
+  - CocoaAsyncSocket (7.6.3)
+  - KZAPLink (0.1.0):
+    - CocoaAsyncSocket
+
+DEPENDENCIES:
+  - KZAPLink (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - CocoaAsyncSocket
+
+EXTERNAL SOURCES:
+  KZAPLink:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  KZAPLink: 764515afd307acc6ce66acdaf8480522a56e4583
+
+PODFILE CHECKSUM: 8fb08ead77391ffc9969aacfed7028de829b1598
+
+COCOAPODS: 1.8.3

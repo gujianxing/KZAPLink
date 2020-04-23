@@ -1,0 +1,32 @@
+{
+  "name": "KZAPLink",
+  "version": "0.1.0",
+  "summary": "A short description of KZAPLink.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/gujianxing/KZAPLink",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gujianxing": "Khazan@foxmail.com"
+  },
+  "source": {
+    "git": "https://github.com/gujianxing/KZAPLink.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KZAPLink/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "NetworkExtension",
+    "SystemConfiguration"
+  ],
+  "dependencies": {
+    "CocoaAsyncSocket": [
+
+    ]
+  }
+}
