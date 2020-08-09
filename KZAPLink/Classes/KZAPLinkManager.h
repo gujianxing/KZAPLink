@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-UIKIT_EXTERN NSNotificationName const KZAPLinkPercentageNotification;
+UIKIT_EXTERN NSNotificationName const _Nullable KZAPLinkPercentageNotification;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -57,7 +57,6 @@ QLink AP Connected
 + (NSString *)currentSSID;
 
 + (void)SSID:(void(^)(NSString *ssid))handler;
-
 
 + (void)startWithDelegate:(id)delegate ssid:(nonnull NSString *)ssid pwd:(NSString *)pwd enduser_key:(NSString *)enduser_key regionid:(NSString *)regionid timeout:(NSTimeInterval)timeout;
 

@@ -72,7 +72,7 @@
 
 
 + (NSDictionary *)getBothIPAddresses {
-    const NSString *WIFI_IF = @"en0";
+    NSString *WIFI_IF = @"en0";
     NSArray *KNOWN_WIRED_IFS = @[@"en1",@"en2",@"en3",@"en4"];
     NSArray *KNOWN_CELL_IFS = @[@"pdp_ip0",@"pdp_ip1",@"pdp_ip2",@"pdp_ip3"];
     

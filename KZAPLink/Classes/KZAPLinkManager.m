@@ -52,7 +52,6 @@ NSString * const KZAPLinkPercentageNotification = @"KZAPLinkPercentageNotificati
     return [MXQLinkSSIDHelper currentSSID];
 }
 
-
 void(^getSSID)(NSString *ssid);
 
 + (void)SSID:(void(^)(NSString *ssid))handler {

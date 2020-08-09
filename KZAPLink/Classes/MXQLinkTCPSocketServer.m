@@ -295,8 +295,6 @@
 
 
 
-
-
 + (MXQLinkTCPSocketServer *)sharedInstanced {
     static MXQLinkTCPSocketServer *manager = nil;
     static dispatch_once_t onceToken;
