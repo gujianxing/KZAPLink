@@ -1,0 +1,1030 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0197B9A1D55653EFED22B486FE42F985 /* Pods-KZAPLink_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 994A685E6E68DFF75F52A85956C6B099 /* Pods-KZAPLink_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B08B94628DEBBCCA5B651B263992E5B /* MXQLinkSSIDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F5F2CB6BF08B85D9843390EE83712 /* MXQLinkSSIDHelper.m */; };
+		0EC1806437F66CC12F06DD7ACD1FBA4A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE1E0C577BB77F9B5098819398D1648 /* Security.framework */; };
+		1271ABB8A67BBD3CE9050D05471E23DA /* MXQLinkTCPSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 159294539B1527A016A3AB0321542807 /* MXQLinkTCPSocketServer.m */; };
+		14703875367641811BD5FE75ACD67C96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBD459136ED9E59C36680F5BBE7FDF6 /* Foundation.framework */; };
+		18182716B2F93CE5362C8B8B53EF3E91 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578E1761D501D699F287D50E4F95746C /* SystemConfiguration.framework */; };
+		1F292B5410B16DBF60D1F47A48216622 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D9393A92083DA9D32F56244F48A39 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		20386C4BEBA1CEA6E5EDB1669B7ADD76 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC4B58E7466A902ACE2BF0A68065585 /* CFNetwork.framework */; };
+		290A7D0C496D2B6755C8E5CE24A16BBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBD459136ED9E59C36680F5BBE7FDF6 /* Foundation.framework */; };
+		2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8773045111A5CD08ECF026E48421F3B /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29C1D197E6DEDE256066440D449C6766 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F046389EABDECCB07EFA130ACEF8471 /* CocoaAsyncSocket.framework */; };
+		37FB2BE465E056593E6A2E5036F30D17 /* Pods-KZAPLink_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD79EE138C1EDD230B5D76EA2B4E20 /* Pods-KZAPLink_Example-dummy.m */; };
+		3DBDFF78B471CC1ECBC856E68BFECF49 /* KZAPLink-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD4776429C22FCF0C9E367B233E17856 /* KZAPLink-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5A665204A6EB0247240DDA87819CB4 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4534AC08735C7F986F9AA0D5B2CA2B4E /* MXQLinkSSIDHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D972817E49B7AF0C82116CEC6CC0F4 /* MXQLinkSSIDHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48B9C12D7D30AD308395814C0B246076 /* KZAPLinkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7242D2E0A55780E2DF4D85C2EFD56ED2 /* KZAPLinkManager.m */; };
+		4E37176B50C2BCA96B360B93CDECB942 /* MXQLinkMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 96CD483F244D7A526C74317EA879C781 /* MXQLinkMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68CC5E16022E61CDA5AADF4928D49E9A /* Pods-KZAPLink_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A60C487285369F77EBCB4372AD337AE /* Pods-KZAPLink_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C237B7AA6F4A2DD17CA05EB90C83362 /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BD1B356EA29219B7BDC08082938B68 /* CocoaAsyncSocket-dummy.m */; };
+		6CF665F49BFB84D62CECD3BEEB63CD97 /* MXQLinkTCPSocketServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B3EBEC68102042104B014129D3471F1 /* MXQLinkTCPSocketServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8A3C6438C38DDD3CFF1E6C17D891DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4836F50947064C14D18A90F7019244 /* UIKit.framework */; };
+		92FF5F31CF002088C2FF51BC889EA820 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBD459136ED9E59C36680F5BBE7FDF6 /* Foundation.framework */; };
+		AEB5A26218914174B70273827E01343A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBD459136ED9E59C36680F5BBE7FDF6 /* Foundation.framework */; };
+		B3022C78D90F1D4C3F2A0D9D3CF1E808 /* KZAPLink-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC31AF79291D38600D0908E1666C00 /* KZAPLink-dummy.m */; };
+		BF0E4454B28437897BC092AE02CD0C13 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A64404F0A4CC1801E1409DF393AB248B /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C5DFA01892272589E7057D2B038B303F /* KZAPLinkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AB153CCFF9CA257CD9CE7D785EF45EDD /* KZAPLinkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA293C446B580EEC70F631B729C1078 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2312B11947713AE4C82EB77BF8E3FFC /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = DAABA9BCCC4BE52E671AC1AE49579BD2 /* ReplaceMe.m */; };
+		EB6E7B762B52EE79397ECC7DAFDB0FC7 /* Pods-KZAPLink_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2030DE426B9C58F6AE78D8A2FD0221AB /* Pods-KZAPLink_Tests-dummy.m */; };
+		F1C5E85DC7F5BE35E47B302FAC41F9EA /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7706F1899F4BB5EA910762B227411882 /* NetworkExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		249A8510957AA5366DFF38E74AA48061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C3DD996B2FC99DFF12C69F2A02A401;
+			remoteInfo = "Pods-KZAPLink_Example";
+		};
+		AD1DC1186755F48498299199FC343143 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		B3926C60AAD4CB44552B4E51C8333419 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D99879EF2C9C53D3A650201A5B9C00E;
+			remoteInfo = KZAPLink;
+		};
+		F0BD8848C0BC5D67845A72C16836FC3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042F5F2CB6BF08B85D9843390EE83712 /* MXQLinkSSIDHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXQLinkSSIDHelper.m; path = KZAPLink/Classes/MXQLinkSSIDHelper.m; sourceTree = "<group>"; };
+		0AAC31AF79291D38600D0908E1666C00 /* KZAPLink-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KZAPLink-dummy.m"; sourceTree = "<group>"; };
+		0B4836F50947064C14D18A90F7019244 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		12D2BC450C4A6B05397075508D93D9CE /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		141237F028BC869D7E00B9CEAC0C782F /* KZAPLink.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KZAPLink.modulemap; sourceTree = "<group>"; };
+		14EC9BACD21D5AE49AF2CB0CA6EA1165 /* Pods-KZAPLink_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KZAPLink_Tests.modulemap"; sourceTree = "<group>"; };
+		159294539B1527A016A3AB0321542807 /* MXQLinkTCPSocketServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXQLinkTCPSocketServer.m; path = KZAPLink/Classes/MXQLinkTCPSocketServer.m; sourceTree = "<group>"; };
+		1A60C487285369F77EBCB4372AD337AE /* Pods-KZAPLink_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KZAPLink_Tests-umbrella.h"; sourceTree = "<group>"; };
+		1B04C85BA98A5B866CFA1807847D471D /* Pods-KZAPLink_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KZAPLink_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1DBD459136ED9E59C36680F5BBE7FDF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1EA31537EC9092AC6F8C20D465E83BF0 /* Pods-KZAPLink_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KZAPLink_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2030DE426B9C58F6AE78D8A2FD0221AB /* Pods-KZAPLink_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KZAPLink_Tests-dummy.m"; sourceTree = "<group>"; };
+		2D9F90358A97470125661B15F1AFD7A4 /* Pods-KZAPLink_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KZAPLink_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		346D7A5F71187AAA06CAA7528E36FF68 /* Pods-KZAPLink_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KZAPLink_Example.release.xcconfig"; sourceTree = "<group>"; };
+		34E09233B8AB6576B277D5F1D912054C /* Pods_KZAPLink_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KZAPLink_Tests.framework; path = "Pods-KZAPLink_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		365C65468657CBF884E551A91CE58C7E /* Pods-KZAPLink_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KZAPLink_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		543ABF84AF340D37B75F52DAE5A43E48 /* Pods-KZAPLink_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KZAPLink_Example.modulemap"; sourceTree = "<group>"; };
+		578E1761D501D699F287D50E4F95746C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		5B3EBEC68102042104B014129D3471F1 /* MXQLinkTCPSocketServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXQLinkTCPSocketServer.h; path = KZAPLink/Classes/MXQLinkTCPSocketServer.h; sourceTree = "<group>"; };
+		5F553F02908C29F68E75184739129AC7 /* KZAPLink-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KZAPLink-prefix.pch"; sourceTree = "<group>"; };
+		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0D9393A92083DA9D32F56244F48A39 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		7242D2E0A55780E2DF4D85C2EFD56ED2 /* KZAPLinkManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KZAPLinkManager.m; path = KZAPLink/Classes/KZAPLinkManager.m; sourceTree = "<group>"; };
+		76BD79EE138C1EDD230B5D76EA2B4E20 /* Pods-KZAPLink_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KZAPLink_Example-dummy.m"; sourceTree = "<group>"; };
+		7706F1899F4BB5EA910762B227411882 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/NetworkExtension.framework; sourceTree = DEVELOPER_DIR; };
+		77801AC20D2D6D45D1BA12F7AB5A6545 /* KZAPLink-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KZAPLink-Info.plist"; sourceTree = "<group>"; };
+		7BC2788024F21DCDBBA285D91D185BD6 /* Pods-KZAPLink_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KZAPLink_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F006CA7507282EAE1EDEF962C4DED23 /* Pods-KZAPLink_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KZAPLink_Tests-Info.plist"; sourceTree = "<group>"; };
+		84B462E1179F782225135ABBD5CAB8F8 /* KZAPLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KZAPLink.framework; path = KZAPLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B686CFAB542400135ACE0C23847EBF /* CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.xcconfig; sourceTree = "<group>"; };
+		8DA293C446B580EEC70F631B729C1078 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		8F046389EABDECCB07EFA130ACEF8471 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CD483F244D7A526C74317EA879C781 /* MXQLinkMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXQLinkMacros.h; path = KZAPLink/Classes/MXQLinkMacros.h; sourceTree = "<group>"; };
+		994A685E6E68DFF75F52A85956C6B099 /* Pods-KZAPLink_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KZAPLink_Example-umbrella.h"; sourceTree = "<group>"; };
+		994AAB42FC326DCAA89A16A8563BE548 /* Pods-KZAPLink_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KZAPLink_Example-Info.plist"; sourceTree = "<group>"; };
+		99BD1B356EA29219B7BDC08082938B68 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		9CA81454C9F0DFBBBF17088D20B47D3B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A64404F0A4CC1801E1409DF393AB248B /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		A905023E6DEC0CB3ACF18BC768C59C2E /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		AA5A665204A6EB0247240DDA87819CB4 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		AB153CCFF9CA257CD9CE7D785EF45EDD /* KZAPLinkManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KZAPLinkManager.h; path = KZAPLink/Classes/KZAPLinkManager.h; sourceTree = "<group>"; };
+		B6D972817E49B7AF0C82116CEC6CC0F4 /* MXQLinkSSIDHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXQLinkSSIDHelper.h; path = KZAPLink/Classes/MXQLinkSSIDHelper.h; sourceTree = "<group>"; };
+		BCDE76876687B321773B10FBC81AC62C /* KZAPLink.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KZAPLink.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C012DA0043957AF2348FE0CB1117D811 /* Pods-KZAPLink_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KZAPLink_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D85AFF31FF97E8B7D7776E535FEA7F49 /* Pods-KZAPLink_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KZAPLink_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DAABA9BCCC4BE52E671AC1AE49579BD2 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = KZAPLink/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		DB1E5A16FF9C834445A0D4296CA7116B /* Pods-KZAPLink_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KZAPLink_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DCC4B58E7466A902ACE2BF0A68065585 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		DD4776429C22FCF0C9E367B233E17856 /* KZAPLink-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KZAPLink-umbrella.h"; sourceTree = "<group>"; };
+		DDDDF60349A818667DAF6A1A2544552D /* Pods_KZAPLink_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KZAPLink_Example.framework; path = "Pods-KZAPLink_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA17E24F689BAD69B80C9E2639F6EE9 /* CocoaAsyncSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-Info.plist"; sourceTree = "<group>"; };
+		E8773045111A5CD08ECF026E48421F3B /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		EAE1E0C577BB77F9B5098819398D1648 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		F147CDFC859CCC4CBC5B86DBCE0A0815 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F97A0D4D47B972E695AC74C4A277EAD4 /* KZAPLink.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KZAPLink.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		130C4F5740F31FFC4961FD7EBF73FD2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92FF5F31CF002088C2FF51BC889EA820 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		160EF26C734A27A9436CAB7143AF8F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20386C4BEBA1CEA6E5EDB1669B7ADD76 /* CFNetwork.framework in Frameworks */,
+				14703875367641811BD5FE75ACD67C96 /* Foundation.framework in Frameworks */,
+				0EC1806437F66CC12F06DD7ACD1FBA4A /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5470EFDB1F8A2511A193CB087FBED995 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C1D197E6DEDE256066440D449C6766 /* CocoaAsyncSocket.framework in Frameworks */,
+				AEB5A26218914174B70273827E01343A /* Foundation.framework in Frameworks */,
+				F1C5E85DC7F5BE35E47B302FAC41F9EA /* NetworkExtension.framework in Frameworks */,
+				18182716B2F93CE5362C8B8B53EF3E91 /* SystemConfiguration.framework in Frameworks */,
+				7B8A3C6438C38DDD3CFF1E6C17D891DB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22400E9544A5C6CFA31FF3E5642AB1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290A7D0C496D2B6755C8E5CE24A16BBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1099940826F621D93324AC699D74A5A6 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B03C3041683EA0C40ADCC01A172912F6 /* KZAPLink */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7B1C773F2D4DF233351F6FDD81558A35 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BCDE76876687B321773B10FBC81AC62C /* KZAPLink.podspec */,
+				9CA81454C9F0DFBBBF17088D20B47D3B /* LICENSE */,
+				F147CDFC859CCC4CBC5B86DBCE0A0815 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		925E6BE502840B1CC9AE6443247BBC3C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				141237F028BC869D7E00B9CEAC0C782F /* KZAPLink.modulemap */,
+				F97A0D4D47B972E695AC74C4A277EAD4 /* KZAPLink.xcconfig */,
+				0AAC31AF79291D38600D0908E1666C00 /* KZAPLink-dummy.m */,
+				77801AC20D2D6D45D1BA12F7AB5A6545 /* KZAPLink-Info.plist */,
+				5F553F02908C29F68E75184739129AC7 /* KZAPLink-prefix.pch */,
+				DD4776429C22FCF0C9E367B233E17856 /* KZAPLink-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KZAPLink";
+			sourceTree = "<group>";
+		};
+		9A9904CABCCD1AB58DACFAE1A95DA100 /* Pods-KZAPLink_Example */ = {
+			isa = PBXGroup;
+			children = (
+				543ABF84AF340D37B75F52DAE5A43E48 /* Pods-KZAPLink_Example.modulemap */,
+				D85AFF31FF97E8B7D7776E535FEA7F49 /* Pods-KZAPLink_Example-acknowledgements.markdown */,
+				C012DA0043957AF2348FE0CB1117D811 /* Pods-KZAPLink_Example-acknowledgements.plist */,
+				76BD79EE138C1EDD230B5D76EA2B4E20 /* Pods-KZAPLink_Example-dummy.m */,
+				1B04C85BA98A5B866CFA1807847D471D /* Pods-KZAPLink_Example-frameworks.sh */,
+				994AAB42FC326DCAA89A16A8563BE548 /* Pods-KZAPLink_Example-Info.plist */,
+				994A685E6E68DFF75F52A85956C6B099 /* Pods-KZAPLink_Example-umbrella.h */,
+				DB1E5A16FF9C834445A0D4296CA7116B /* Pods-KZAPLink_Example.debug.xcconfig */,
+				346D7A5F71187AAA06CAA7528E36FF68 /* Pods-KZAPLink_Example.release.xcconfig */,
+			);
+			name = "Pods-KZAPLink_Example";
+			path = "Target Support Files/Pods-KZAPLink_Example";
+			sourceTree = "<group>";
+		};
+		A43355580CF1E90550D7A949E6472EA9 /* Pods-KZAPLink_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				14EC9BACD21D5AE49AF2CB0CA6EA1165 /* Pods-KZAPLink_Tests.modulemap */,
+				1EA31537EC9092AC6F8C20D465E83BF0 /* Pods-KZAPLink_Tests-acknowledgements.markdown */,
+				2D9F90358A97470125661B15F1AFD7A4 /* Pods-KZAPLink_Tests-acknowledgements.plist */,
+				2030DE426B9C58F6AE78D8A2FD0221AB /* Pods-KZAPLink_Tests-dummy.m */,
+				7F006CA7507282EAE1EDEF962C4DED23 /* Pods-KZAPLink_Tests-Info.plist */,
+				1A60C487285369F77EBCB4372AD337AE /* Pods-KZAPLink_Tests-umbrella.h */,
+				7BC2788024F21DCDBBA285D91D185BD6 /* Pods-KZAPLink_Tests.debug.xcconfig */,
+				365C65468657CBF884E551A91CE58C7E /* Pods-KZAPLink_Tests.release.xcconfig */,
+			);
+			name = "Pods-KZAPLink_Tests";
+			path = "Target Support Files/Pods-KZAPLink_Tests";
+			sourceTree = "<group>";
+		};
+		A49791B92A7781B859EAEEF581EE6D8B /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				8DA293C446B580EEC70F631B729C1078 /* GCDAsyncSocket.h */,
+				6D0D9393A92083DA9D32F56244F48A39 /* GCDAsyncSocket.m */,
+				AA5A665204A6EB0247240DDA87819CB4 /* GCDAsyncUdpSocket.h */,
+				A64404F0A4CC1801E1409DF393AB248B /* GCDAsyncUdpSocket.m */,
+				B862B4264C2F1D9F87C12772C46C54AE /* Support Files */,
+			);
+			name = CocoaAsyncSocket;
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		AAC381DAEC7B785C0BEB37DF9BA17866 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A9904CABCCD1AB58DACFAE1A95DA100 /* Pods-KZAPLink_Example */,
+				A43355580CF1E90550D7A949E6472EA9 /* Pods-KZAPLink_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B03C3041683EA0C40ADCC01A172912F6 /* KZAPLink */ = {
+			isa = PBXGroup;
+			children = (
+				AB153CCFF9CA257CD9CE7D785EF45EDD /* KZAPLinkManager.h */,
+				7242D2E0A55780E2DF4D85C2EFD56ED2 /* KZAPLinkManager.m */,
+				96CD483F244D7A526C74317EA879C781 /* MXQLinkMacros.h */,
+				B6D972817E49B7AF0C82116CEC6CC0F4 /* MXQLinkSSIDHelper.h */,
+				042F5F2CB6BF08B85D9843390EE83712 /* MXQLinkSSIDHelper.m */,
+				5B3EBEC68102042104B014129D3471F1 /* MXQLinkTCPSocketServer.h */,
+				159294539B1527A016A3AB0321542807 /* MXQLinkTCPSocketServer.m */,
+				DAABA9BCCC4BE52E671AC1AE49579BD2 /* ReplaceMe.m */,
+				7B1C773F2D4DF233351F6FDD81558A35 /* Pod */,
+				925E6BE502840B1CC9AE6443247BBC3C /* Support Files */,
+			);
+			name = KZAPLink;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B862B4264C2F1D9F87C12772C46C54AE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				12D2BC450C4A6B05397075508D93D9CE /* CocoaAsyncSocket.modulemap */,
+				85B686CFAB542400135ACE0C23847EBF /* CocoaAsyncSocket.xcconfig */,
+				99BD1B356EA29219B7BDC08082938B68 /* CocoaAsyncSocket-dummy.m */,
+				DEA17E24F689BAD69B80C9E2639F6EE9 /* CocoaAsyncSocket-Info.plist */,
+				A905023E6DEC0CB3ACF18BC768C59C2E /* CocoaAsyncSocket-prefix.pch */,
+				E8773045111A5CD08ECF026E48421F3B /* CocoaAsyncSocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
+			sourceTree = "<group>";
+		};
+		BB2BDAA8DB999C491DAC5EAE1CFDC78F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A49791B92A7781B859EAEEF581EE6D8B /* CocoaAsyncSocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE2881BA0B018621C5EAD5103C6B3BAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F046389EABDECCB07EFA130ACEF8471 /* CocoaAsyncSocket.framework */,
+				EB520A74C35A93E3FB3BE10556DF541A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1099940826F621D93324AC699D74A5A6 /* Development Pods */,
+				BE2881BA0B018621C5EAD5103C6B3BAB /* Frameworks */,
+				BB2BDAA8DB999C491DAC5EAE1CFDC78F /* Pods */,
+				FC4D4FFA8DCD8446EEAA3D800431B915 /* Products */,
+				AAC381DAEC7B785C0BEB37DF9BA17866 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		EB520A74C35A93E3FB3BE10556DF541A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DCC4B58E7466A902ACE2BF0A68065585 /* CFNetwork.framework */,
+				1DBD459136ED9E59C36680F5BBE7FDF6 /* Foundation.framework */,
+				7706F1899F4BB5EA910762B227411882 /* NetworkExtension.framework */,
+				EAE1E0C577BB77F9B5098819398D1648 /* Security.framework */,
+				578E1761D501D699F287D50E4F95746C /* SystemConfiguration.framework */,
+				0B4836F50947064C14D18A90F7019244 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FC4D4FFA8DCD8446EEAA3D800431B915 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */,
+				84B462E1179F782225135ABBD5CAB8F8 /* KZAPLink.framework */,
+				DDDDF60349A818667DAF6A1A2544552D /* Pods_KZAPLink_Example.framework */,
+				34E09233B8AB6576B277D5F1D912054C /* Pods_KZAPLink_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3F54F2011FB6705635709BFB262AA965 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0197B9A1D55653EFED22B486FE42F985 /* Pods-KZAPLink_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90069D54A6CFE449C4B5E90C2CDBEFA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBDFF78B471CC1ECBC856E68BFECF49 /* KZAPLink-umbrella.h in Headers */,
+				C5DFA01892272589E7057D2B038B303F /* KZAPLinkManager.h in Headers */,
+				4E37176B50C2BCA96B360B93CDECB942 /* MXQLinkMacros.h in Headers */,
+				4534AC08735C7F986F9AA0D5B2CA2B4E /* MXQLinkSSIDHelper.h in Headers */,
+				6CF665F49BFB84D62CECD3BEEB63CD97 /* MXQLinkTCPSocketServer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEF3BFDB40EA98A7828EFFBD1C6B5DA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CC5E16022E61CDA5AADF4928D49E9A /* Pods-KZAPLink_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82807D639FCFDF56A607D3970098A87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */,
+				411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D99879EF2C9C53D3A650201A5B9C00E /* KZAPLink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000B57C34CFFB000406FEF60972FD0CD /* Build configuration list for PBXNativeTarget "KZAPLink" */;
+			buildPhases = (
+				90069D54A6CFE449C4B5E90C2CDBEFA0 /* Headers */,
+				7A478B2F54BEA0B1C444F59FB467BA3F /* Sources */,
+				5470EFDB1F8A2511A193CB087FBED995 /* Frameworks */,
+				F164DC570E714BCB724141E36D302571 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAA994F324079B68C3BB753E8582A876 /* PBXTargetDependency */,
+			);
+			name = KZAPLink;
+			productName = KZAPLink;
+			productReference = 84B462E1179F782225135ABBD5CAB8F8 /* KZAPLink.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildPhases = (
+				F82807D639FCFDF56A607D3970098A87 /* Headers */,
+				398D9830C2C4A6872C9EEC588214E124 /* Sources */,
+				160EF26C734A27A9436CAB7143AF8F15 /* Frameworks */,
+				B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = 6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63C3DD996B2FC99DFF12C69F2A02A401 /* Pods-KZAPLink_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B40F13A126F837879BCA2A295BE3281C /* Build configuration list for PBXNativeTarget "Pods-KZAPLink_Example" */;
+			buildPhases = (
+				3F54F2011FB6705635709BFB262AA965 /* Headers */,
+				2F402D610DD6E008A729B18A4E4B8FBB /* Sources */,
+				A22400E9544A5C6CFA31FF3E5642AB1C /* Frameworks */,
+				6CC99E02E0AB3B6D54F7A16B931C83DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECD868468FD85FF7160636088184D908 /* PBXTargetDependency */,
+				9905AE832DF1357E7AC850672DAB4011 /* PBXTargetDependency */,
+			);
+			name = "Pods-KZAPLink_Example";
+			productName = "Pods-KZAPLink_Example";
+			productReference = DDDDF60349A818667DAF6A1A2544552D /* Pods_KZAPLink_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6B03ADF1F5D92F43B85FFED8AD500623 /* Pods-KZAPLink_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8D8285775C9BD60EE624786C35073D0 /* Build configuration list for PBXNativeTarget "Pods-KZAPLink_Tests" */;
+			buildPhases = (
+				AEF3BFDB40EA98A7828EFFBD1C6B5DA6 /* Headers */,
+				85043FEA7B8D484773666D265CAC7965 /* Sources */,
+				130C4F5740F31FFC4961FD7EBF73FD2D /* Frameworks */,
+				C31C84D5E32F93C92C948452E066E944 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7FF1BD54B465AC7089B56D2CB6E7D04 /* PBXTargetDependency */,
+			);
+			name = "Pods-KZAPLink_Tests";
+			productName = "Pods-KZAPLink_Tests";
+			productReference = 34E09233B8AB6576B277D5F1D912054C /* Pods_KZAPLink_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FC4D4FFA8DCD8446EEAA3D800431B915 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */,
+				5D99879EF2C9C53D3A650201A5B9C00E /* KZAPLink */,
+				63C3DD996B2FC99DFF12C69F2A02A401 /* Pods-KZAPLink_Example */,
+				6B03ADF1F5D92F43B85FFED8AD500623 /* Pods-KZAPLink_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CC99E02E0AB3B6D54F7A16B931C83DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C31C84D5E32F93C92C948452E066E944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F164DC570E714BCB724141E36D302571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F402D610DD6E008A729B18A4E4B8FBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37FB2BE465E056593E6A2E5036F30D17 /* Pods-KZAPLink_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		398D9830C2C4A6872C9EEC588214E124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C237B7AA6F4A2DD17CA05EB90C83362 /* CocoaAsyncSocket-dummy.m in Sources */,
+				1F292B5410B16DBF60D1F47A48216622 /* GCDAsyncSocket.m in Sources */,
+				BF0E4454B28437897BC092AE02CD0C13 /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A478B2F54BEA0B1C444F59FB467BA3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3022C78D90F1D4C3F2A0D9D3CF1E808 /* KZAPLink-dummy.m in Sources */,
+				48B9C12D7D30AD308395814C0B246076 /* KZAPLinkManager.m in Sources */,
+				0B08B94628DEBBCCA5B651B263992E5B /* MXQLinkSSIDHelper.m in Sources */,
+				1271ABB8A67BBD3CE9050D05471E23DA /* MXQLinkTCPSocketServer.m in Sources */,
+				E2312B11947713AE4C82EB77BF8E3FFC /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85043FEA7B8D484773666D265CAC7965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6E7B762B52EE79397ECC7DAFDB0FC7 /* Pods-KZAPLink_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9905AE832DF1357E7AC850672DAB4011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KZAPLink;
+			target = 5D99879EF2C9C53D3A650201A5B9C00E /* KZAPLink */;
+			targetProxy = B3926C60AAD4CB44552B4E51C8333419 /* PBXContainerItemProxy */;
+		};
+		BAA994F324079B68C3BB753E8582A876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = AD1DC1186755F48498299199FC343143 /* PBXContainerItemProxy */;
+		};
+		E7FF1BD54B465AC7089B56D2CB6E7D04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KZAPLink_Example";
+			target = 63C3DD996B2FC99DFF12C69F2A02A401 /* Pods-KZAPLink_Example */;
+			targetProxy = 249A8510957AA5366DFF38E74AA48061 /* PBXContainerItemProxy */;
+		};
+		ECD868468FD85FF7160636088184D908 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = F0BD8848C0BC5D67845A72C16836FC3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		245B48940E932DA79329800AFAAA6E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC2788024F21DCDBBA285D91D185BD6 /* Pods-KZAPLink_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KZAPLink_Tests/Pods-KZAPLink_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KZAPLink_Tests/Pods-KZAPLink_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		682DE4C2DE8F51D3FFDFE2219378B935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85B686CFAB542400135ACE0C23847EBF /* CocoaAsyncSocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A7FDB76CA1939A480948FEE07152036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F97A0D4D47B972E695AC74C4A277EAD4 /* KZAPLink.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KZAPLink/KZAPLink-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KZAPLink/KZAPLink-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KZAPLink/KZAPLink.modulemap";
+				PRODUCT_MODULE_NAME = KZAPLink;
+				PRODUCT_NAME = KZAPLink;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8860CD6500802621508503EB110FB94E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB1E5A16FF9C834445A0D4296CA7116B /* Pods-KZAPLink_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KZAPLink_Example/Pods-KZAPLink_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KZAPLink_Example/Pods-KZAPLink_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9546B7F1327CA168A060E5FF6A1269C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F97A0D4D47B972E695AC74C4A277EAD4 /* KZAPLink.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KZAPLink/KZAPLink-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KZAPLink/KZAPLink-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KZAPLink/KZAPLink.modulemap";
+				PRODUCT_MODULE_NAME = KZAPLink;
+				PRODUCT_NAME = KZAPLink;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6C2D0704E8572B6E1EB6F3F7D61E812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 365C65468657CBF884E551A91CE58C7E /* Pods-KZAPLink_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KZAPLink_Tests/Pods-KZAPLink_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KZAPLink_Tests/Pods-KZAPLink_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C30729ECE00EFAB069A04BA97F914B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346D7A5F71187AAA06CAA7528E36FF68 /* Pods-KZAPLink_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KZAPLink_Example/Pods-KZAPLink_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KZAPLink_Example/Pods-KZAPLink_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC54AB23DE82580B5A0147FBD1875882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85B686CFAB542400135ACE0C23847EBF /* CocoaAsyncSocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000B57C34CFFB000406FEF60972FD0CD /* Build configuration list for PBXNativeTarget "KZAPLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9546B7F1327CA168A060E5FF6A1269C4 /* Debug */,
+				6A7FDB76CA1939A480948FEE07152036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC54AB23DE82580B5A0147FBD1875882 /* Debug */,
+				682DE4C2DE8F51D3FFDFE2219378B935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B40F13A126F837879BCA2A295BE3281C /* Build configuration list for PBXNativeTarget "Pods-KZAPLink_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8860CD6500802621508503EB110FB94E /* Debug */,
+				C30729ECE00EFAB069A04BA97F914B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8D8285775C9BD60EE624786C35073D0 /* Build configuration list for PBXNativeTarget "Pods-KZAPLink_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245B48940E932DA79329800AFAAA6E10 /* Debug */,
+				B6C2D0704E8572B6E1EB6F3F7D61E812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
