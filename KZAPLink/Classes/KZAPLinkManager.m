@@ -45,16 +45,9 @@ NSString * const KZAPLinkPercentageNotification = @"KZAPLinkPercentageNotificati
 
 @implementation KZAPLinkManager
 
-+ (NSString *)currentSSID {
-    
-    [self requestAccess];
-    
-    return [MXQLinkSSIDHelper currentSSID];
-}
-
 void(^getSSID)(NSString *ssid);
 
-+ (void)SSID:(void(^)(NSString *ssid))handler {
++ (void)requestCurrentSSID:(void(^)(NSString *ssid))handler {
     
     NSInteger access = [self requestAccess];
 
@@ -70,13 +63,28 @@ void(^getSSID)(NSString *ssid);
     
 }
 
-+ (void)startWithDelegate:(id)delegate ssid:(nonnull NSString *)ssid pwd:(NSString *)pwd enduser_key:(NSString *)enduser_key regionid:(NSString *)regionid timeout:(NSTimeInterval)timeout {
++ (void)startWithDelegate:(id)delegate
+                     ssid:(nonnull NSString *)ssid
+                      pwd:(NSString *)pwd
+              enduser_key:(NSString *)enduser_key 
+                 regionid:(NSString *)regionid
+                  timeout:(NSTimeInterval)timeout {
     
-    [[self sharedInstanced] startWithDelegate:delegate ssid:ssid pwd:pwd enduser_key:enduser_key regionid:regionid timeout:timeout];
+    [[self sharedInstanced] startWithDelegate:delegate
+                                         ssid:ssid
+                                          pwd:pwd
+                                  enduser_key:enduser_key
+                                     regionid:regionid
+                                      timeout:timeout];
     
 }
 
-- (void)startWithDelegate:(id)delegate ssid:(nonnull NSString *)ssid pwd:(NSString *)pwd enduser_key:(NSString *)enduser_key regionid:(NSString *)regionid timeout:(NSTimeInterval)timeout {
+- (void)startWithDelegate:(id)delegate
+                     ssid:(nonnull NSString *)ssid
+                      pwd:(NSString *)pwd
+              enduser_key:(NSString *)enduser_key
+                 regionid:(NSString *)regionid
+                  timeout:(NSTimeInterval)timeout {
     
     self.delegate = delegate;
     
@@ -99,7 +107,7 @@ void(^getSSID)(NSString *ssid);
 }
 
 /**
- 开启定时器
+ start timer
  */
 - (void)startTimerAndCheck {
     
@@ -125,11 +133,11 @@ void(^getSSID)(NSString *ssid);
 }
 
 /**
- 检查热点连接状态
+ waiting user connected the ap
  */
 - (void)timer_HotspotConnected_event_handler {
     
-    MXQLog(@"checking connect");
+    MXQLog(@"check if ap connected");
     
     __weak typeof(self) weakSelf = self;
     
@@ -137,13 +145,13 @@ void(^getSSID)(NSString *ssid);
                 
         BOOL connected = [[MXQLinkSSIDHelper currentSSID] isEqualToString:MXQLINK_HOTSPOT_SSID];
         
-        MXQLog(@"connecting");
+        MXQLog(@"checking");
         
         if (!connected) {
             return ;
         }
         
-        MXQLog(@"connected");
+        MXQLog(@"ap connected");
         
         if ([self.delegate respondsToSelector:@selector(KZAPLinkConnected)]) {
             
@@ -179,7 +187,7 @@ void(^getSSID)(NSString *ssid);
 }
 
 /**
- 检查进度
+ percentage
  */
 - (void)timer_pairConnected_event_handler {
     
@@ -187,7 +195,6 @@ void(^getSSID)(NSString *ssid);
     
     self.server = [MXQLinkTCPSocketServer startWithDelegate:self ssid:self.ssid pwd:self.pwd enduser_key:self.enduser_key bindcode:timeStr regionid:self.regionid];
     
-    // 检查
     __weak typeof(self) weakSelf = self;
     
     dispatch_source_set_event_handler(self.timer, ^{
@@ -235,14 +242,6 @@ void(^getSSID)(NSString *ssid);
     }
     
     [self pairStop];
-    
-    if ([self.delegate respondsToSelector:@selector(KZAPLinkFinish)]) {
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.delegate KZAPLinkFinish];
-        });
-        
-    }
 }
 
 /**
@@ -256,6 +255,14 @@ void(^getSSID)(NSString *ssid);
     [MXQLinkTCPSocketServer stopServer];
     
     self.server = nil;
+        
+    if ([self.delegate respondsToSelector:@selector(KZAPLinkEnded)]) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.delegate KZAPLinkEnded];
+        });
+        
+    }
 }
 
 - (void)timerStop {
@@ -324,11 +331,11 @@ void(^getSSID)(NSString *ssid);
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
     NSLog(@"status:%d", status);
     
-    getSSID ? getSSID([KZAPLinkManager currentSSID]) : nil;
+    getSSID ? getSSID([MXQLinkSSIDHelper currentSSID]) : nil;
     
 }
 
-//获取当前时间戳
+// current timeinterval
 - (NSString *)currentTimeStr {
     
     NSDate *date = [NSDate date]; //获取当前时间

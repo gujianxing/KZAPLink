@@ -17,16 +17,12 @@
 
 - (IBAction)pairingButtonAction:(UIButton *)sender {
     
-    if ([KZAPLinkManager currentSSID]) {
-        
-        [KZAPLinkManager startWithDelegate:self ssid:@"Mi_zhy" pwd:@"123456789" enduser_key:@"02463d4500400240" regionid:@"47.101.31.245:8008" timeout:30];
-        
-    } else {
-        
-        NSLog(@"no ssid");
-        
-    }
-    
+    [KZAPLinkManager requestCurrentSSID:^(NSString * _Nonnull ssid) {
+        if (ssid) {
+            [KZAPLinkManager startWithDelegate:self ssid:@"Mi_zhy" pwd:@"123456789" enduser_key:@"02463d4500400240" regionid:@"47.101.31.245:8008" timeout:30];
+        }
+    }];
+
 }
 
 -(void)APLinkManager:(KZAPLinkManager *)manager succeedWithBindCode:(NSString *)bindCode {
@@ -37,8 +33,12 @@
 /**
  QLink finish,
  */
-- (void)KZAPLinkFinish {
-    NSLog(@"KZAPLinkFinish");
+- (void)KZAPLinkEnded {
+    NSLog(@"KZAPLinkEnded");
+}
+
+- (void)KZAPLinkConnected {
+    NSLog(@"KZAPLinkConnected");
 }
 
 /**

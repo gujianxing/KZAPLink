@@ -19,7 +19,7 @@
 @property (nonatomic, strong) dispatch_queue_t socketQueue;
 
 /**
- tcp server 状态
+ tcp server status
  */
 @property (nonatomic, assign) BOOL status;
 
@@ -37,7 +37,12 @@
 
 @implementation MXQLinkTCPSocketServer
 
-+ (MXQLinkTCPSocketServer *)startWithDelegate:(id)delegate ssid:(NSString *)ssid pwd:(NSString *)pwd enduser_key:(NSString *)enduser_key bindcode:(NSString *)bindcode regionid:(NSString *)regionid {
++ (MXQLinkTCPSocketServer *)startWithDelegate:(id)delegate
+                                         ssid:(NSString *)ssid
+                                          pwd:(NSString *)pwd
+                                  enduser_key:(NSString *)enduser_key
+                                     bindcode:(NSString *)bindcode
+                                     regionid:(NSString *)regionid {
     
     MXQLinkTCPSocketServer *manager = [self sharedInstanced];
     
@@ -100,7 +105,7 @@
     
     self.status = NO;
     
-    // 结束客户端连接
+    // disconnect
     @synchronized(self.connectedSockets)
     {
         NSUInteger i;
@@ -112,7 +117,6 @@
     
     [self.connectedSockets removeAllObjects];
     
-    // 结束所有连接
     [self.socketServer disconnect];
     
     self.socketServer = nil;
@@ -122,7 +126,7 @@
 
 #pragma socket delegate
 
-// 收到新的socket连接
+// new socket connection
 - (void)socket:(GCDAsyncSocket *)sock didAcceptNewSocket:(GCDAsyncSocket *)newSocket {
     
     @synchronized(self.connectedSockets)
@@ -136,11 +140,11 @@
     
     MXQLog(@"Accepted client %@:%hu", host, port);
     
-    // 读取 socket 消息
+    // read socket data
     [newSocket readDataToData:[GCDAsyncSocket CRLFData] withTimeout:MXQLINK_TCP_SOCKET_SERVER_READ_TIMEOUT tag:[self.connectedSockets indexOfObject:newSocket]];
 }
 
-// 收到新的消息
+// read data
 - (void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag {
     
     [sock readDataToData:[GCDAsyncSocket CRLFData] withTimeout:MXQLINK_TCP_SOCKET_SERVER_READ_TIMEOUT tag:tag];
@@ -182,8 +186,9 @@
     
 }
 
-// 读取超时
-- (NSTimeInterval)socket:(GCDAsyncSocket *)sock shouldTimeoutReadWithTag:(long)tag
+// timeout
+- (NSTimeInterval)socket:(GCDAsyncSocket *)sock
+shouldTimeoutReadWithTag:(long)tag
                  elapsed:(NSTimeInterval)elapsed
                bytesDone:(NSUInteger)length {
     MXQLog(@"wait client response time out");
@@ -191,7 +196,7 @@
     return 0.0;
 }
 
-// 断开连接
+// disconnected
 - (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err {
     if (sock != self.socketServer) {
         MXQLog(@"socket client Did Disconnect: %@ error:%@", sock, err);
@@ -305,7 +310,7 @@
 }
 
 
-//获取当前时间戳
+// current timeinterval
 - (NSString *)currentTimeStr {
     
     NSDate *date = [NSDate date]; //获取当前时间

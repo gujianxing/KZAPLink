@@ -63,7 +63,7 @@
     return info;
 }
 
-// 本地IP
+// local IP
 + (NSString *)localIPAddress {
     NSDictionary *ips = [self getBothIPAddresses];
     NSString *localIP = [ips objectForKey:@"wireless"];

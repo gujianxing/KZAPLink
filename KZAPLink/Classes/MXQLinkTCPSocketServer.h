@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol MXQLinkTCPSocketServerDelegate <NSObject>
 
 /**
- wifi模组收到配网相关数据， 根据bindCode轮询数据
+ get the bindCode and request the bind result from server.
 
- @param bindCode 唯一值
+ @param bindCode only
  */
 - (void)tcpSocketServerEndSuccessWithBindCode:(NSString *)bindCode;
 

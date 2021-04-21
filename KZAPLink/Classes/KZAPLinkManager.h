@@ -36,9 +36,9 @@ QLink AP Connected
 
 
 /**
- QLink finish,
+ QLink ended,
  */
-- (void)KZAPLinkFinish;
+- (void)KZAPLinkEnded;
 
 /**
  QLink percentage
@@ -54,12 +54,25 @@ QLink AP Connected
 
 @interface KZAPLinkManager : NSObject
 
-+ (NSString *)currentSSID;
+/// get current ssid
+/// @param handler ssid
++ (void)requestCurrentSSID:(void(^)(NSString *ssid))handler;
 
-+ (void)SSID:(void(^)(NSString *ssid))handler;
+/// start pair
+/// @param delegate  delegate
+/// @param ssid  ssid
+/// @param pwd  password
+/// @param enduser_key enduser_key
+/// @param regionid  regionid
+/// @param timeout  timeout
++ (void)startWithDelegate:(id)delegate
+                     ssid:(nonnull NSString *)ssid
+                      pwd:(NSString *)pwd
+              enduser_key:(NSString *)enduser_key
+                 regionid:(NSString *)regionid
+                  timeout:(NSTimeInterval)timeout;
 
-+ (void)startWithDelegate:(id)delegate ssid:(nonnull NSString *)ssid pwd:(NSString *)pwd enduser_key:(NSString *)enduser_key regionid:(NSString *)regionid timeout:(NSTimeInterval)timeout;
-
+/// stop pair
 + (void)stop;
 
 @end
