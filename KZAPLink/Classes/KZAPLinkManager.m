@@ -48,19 +48,14 @@ NSString * const KZAPLinkPercentageNotification = @"KZAPLinkPercentageNotificati
 void(^getSSID)(NSString *ssid);
 
 + (void)requestCurrentSSID:(void(^)(NSString *ssid))handler {
-    
     NSInteger access = [self requestAccess];
 
-    if (access == kCLAuthorizationStatusAuthorizedAlways || access == kCLAuthorizationStatusAuthorizedWhenInUse) {
-        
+    if (access == kCLAuthorizationStatusAuthorizedAlways ||
+        access == kCLAuthorizationStatusAuthorizedWhenInUse) {
         handler([MXQLinkSSIDHelper currentSSID]);
-        
     } else {
-        
         getSSID = handler;
-        
     }
-    
 }
 
 + (void)startWithDelegate:(id)delegate
@@ -76,7 +71,6 @@ void(^getSSID)(NSString *ssid);
                                   enduser_key:enduser_key
                                      regionid:regionid
                                       timeout:timeout];
-    
 }
 
 - (void)startWithDelegate:(id)delegate
@@ -170,9 +164,7 @@ void(^getSSID)(NSString *ssid);
 
 
 - (void)applicationDidEnterBackground {
-    
     self.timeIntervalEnterBackground = [[NSDate date] timeIntervalSince1970];
-    
 }
 
 - (void)applicationWillEnterForeground {
@@ -228,7 +220,6 @@ void(^getSSID)(NSString *ssid);
     
     MXQLog(@"times:%f__percentage:%f", self.times, percentage);
     
-    
     dispatch_async(dispatch_get_main_queue(), ^{
         
         if ([self.delegate respondsToSelector:@selector(KZAPLinkPercentage:)]) {
@@ -256,6 +247,8 @@ void(^getSSID)(NSString *ssid);
     
     self.server = nil;
         
+    MXQLog(@"delegate: %@ respondsToSelector:%d", self.delegate, [self.delegate respondsToSelector:@selector(KZAPLinkEnded)]);
+    
     if ([self.delegate respondsToSelector:@selector(KZAPLinkEnded)]) {
         
         dispatch_async(dispatch_get_main_queue(), ^{
